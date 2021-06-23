@@ -385,5 +385,3 @@ namespace get_smb
 "@
 Add-Type -TypeDefinition $Source
 
-# Run example:
-# [get_smb.SmbScanner]::GetCsv("192.168.0.25")
